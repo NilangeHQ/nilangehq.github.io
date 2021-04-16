@@ -22,7 +22,7 @@
         <meta property="twitter:description" content="The Nilange Family">
         <meta property="twitter:image" content="https://nilange.com/media/img/Nilange_Dark.png">
         <!-- meta tags end here -->
-        <link rel=icon type=image/png href="media/img/Nilange_icon.png">
+        <link rel=icon type=image/png href="media/img/Nilange_light.png">
         <!-- meta e -->
 
         <!-- CSS/JS s -->
@@ -36,9 +36,10 @@
             html, body {
                 max-width: 100%;
                 overflow-x: hidden;
+                background-color: #1c1c1c !important;
             }
             .logoimg{
-                width: 30%;
+                width: 40%;
             }
             .vertical-center {
                 min-height: 90%;  /* Fallback for browsers do NOT support vh unit */
@@ -46,9 +47,18 @@
                 display: flex;
                 align-items: center;
             }
+            .noselect {
+                -webkit-touch-callout: none; /* iOS Safari */
+                    -webkit-user-select: none; /* Safari */
+                    -khtml-user-select: none; /* Konqueror HTML */
+                    -moz-user-select: none; /* Firefox */
+                        -ms-user-select: none; /* Internet Explorer/Edge */
+                            user-select: none; /* Non-prefixed version, currently
+                                                supported by Chrome and Opera */
+            }
             .anc{
                 /* anchor */
-                color: black !important;
+                color: lightgray !important;
                 font-weight: 500 !important;
                 text-decoration: none !important;
             }
@@ -57,20 +67,21 @@
             }
             @media (max-width: 767px) {
                 .logoimg{
-                    width: 90%;
+                    width: 100%;
                 }
             }
         </style>
     </head>
     <body>
-        <div class="vertical-center">
+        <div class="vertical-center text-light">
             <div class="container text-center">
-                <img class="align-center logoimg" src="media/img/Nilange_Light.png" alt="">
-                <p class="display-6" style="font-size: large !important;">
+                <img class="align-center logoimg" src="media/img/Nilange_dark.png" alt="">
+                <!-- <p class="display-6" style="font-size: large !important;">
                     <span style="font-weight: 400;">The Nilange Family</span> /
                     <a class="anc" href="#">List of sites</a>
-                    <br><br><span class="text-muted">nilange.com</span>
-                </p>
+                    <br><br><span class="text-light">nilange.com</span>
+                </p> -->
+                <p class="noselect" style="font-size: small; color: darkgray;">Copyright © 2021 Nilange. All rights reserved.</p>
             </div>
         </div>
     </body>
